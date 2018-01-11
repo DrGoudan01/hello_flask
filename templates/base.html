@@ -1,0 +1,14 @@
+<body>
+{# 定义来三个块，header，content，footer #}
+<div>
+    {% block header %}
+        <p>this is my header block</p>
+    {% endblock %}
+</div>
+<div>{% block content %}<p>content test!</p>{% endblock %}</div>
+<div id="footer">
+    {% block footer %}
+    &copy;Copyright 2017 by <a href="http://goudan.com">goudan</a>
+    {% endblock %}
+</div>
+</body>
